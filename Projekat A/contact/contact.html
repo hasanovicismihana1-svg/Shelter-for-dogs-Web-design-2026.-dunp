@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - Pawtners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand logo-brand" href="../home/index.html">
+        <img src="../imglogo/pawlogo1.png" alt="Pawtners Logo" class="logo-img" style="height: 70px;"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="../home/index.html" data-i18n="nav_home">Početna</a></li>
+          <li class="nav-item"><a class="nav-link" href="../about/about.html" data-i18n="nav_about">O nama</a></li>
+          <li class="nav-item"><a class="nav-link" href="../adopt/adopt.html" data-i18n="nav_adopt">Udomljavanje</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../contact/contact.html" data-i18n="nav_contact">Kontakt</a></li>
+          <li class="nav-item"><a class="nav-link" href="../login/login.html" data-i18n="nav_login">Prijava</a></li>
+          <li class="nav-item lang-switcher">
+            <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6">
+          <span class="page-eyebrow" data-i18n="contact_eyebrow">Budimo u kontaktu</span>
+          <h1 class="page-title" data-i18n="contact_title">Kontaktirajte nas</h1>
+          <p class="page-subtitle" data-i18n="contact_subtitle">Imate pitanje, zelite da volontirate ili ste zainteresovani za udomljavanje?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- INFO -->
+        <div class="col-lg-4">
+          <div class="contact-info-block">
+            <h3 class="info-block-title" data-i18n="info_title">Informacije</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="info-label" data-i18n="info_address_label">Adresa</p>
+                <p class="info-value">Ul. Stefana Nemanje 14, Novi Pazar</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.29 6.29l.61-.61a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="info-label" data-i18n="info_phone_label">Telefon</p>
+                <p class="info-value">+381 20 123 456</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="info-label" data-i18n="info_email_label">Email</p>
+                <p class="info-value">info@pawtners.rs</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <p class="info-label" data-i18n="info_hours_label">Radno vreme</p>
+                <p class="info-value" data-i18n="info_hours_val">Pon-Pet 08-18, Sub 09-15</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="col-lg-8">
+          <div class="contact-form-card">
+            <h3 class="form-card-title" data-i18n="form_title">Pošaljite nam poruku</h3>
+            <p class="form-card-subtitle" data-i18n="form_subtitle">Odgovaramo u roku od 24 sata radnim danima.</p>
+
+            <div class="form-row-group">
+              <div class="form-group-wrap">
+                <label class="field-label" for="firstName" data-i18n="label_ime">Ime</label>
+                <input type="text" id="firstName" class="form-field" autocomplete="off" />
+                <div class="field-hint" id="hint-firstName" data-i18n="hint_ime">Unesite vaše ime (najmanje 2 karaktera, samo slova).</div>
+                <div class="field-error" id="err-firstName" data-i18n="err_general">Podatak nije ispravno unet.</div>
+              </div>
+              <div class="form-group-wrap">
+                <label class="field-label" for="lastName" data-i18n="label_prezime">Prezime</label>
+                <input type="text" id="lastName" class="form-field" autocomplete="off" />
+                <div class="field-hint" id="hint-lastName" data-i18n="hint_prezime">Unesite vaše prezime (najmanje 2 karaktera, samo slova).</div>
+                <div class="field-error" id="err-lastName" data-i18n="err_general">Podatak nije ispravno unet.</div>
+              </div>
+            </div>
+
+            <div class="form-group-wrap">
+              <label class="field-label" for="email" data-i18n="label_email">Email adresa</label>
+              <input type="email" id="email" class="form-field" autocomplete="off" />
+              <div class="field-hint" id="hint-email" data-i18n="hint_email">Unesite ispravnu email adresu (primer: ime@domen.com).</div>
+              <div class="field-error" id="err-email" data-i18n="err_general">Podatak nije ispravno unet.</div>
+            </div>
+
+            <div class="form-group-wrap">
+              <label class="field-label" for="message" data-i18n="label_poruka">Poruka</label>
+              <textarea id="message" class="form-field form-textarea" rows="5"></textarea>
+              <div class="field-hint" id="hint-message" data-i18n="hint_poruka">Unesite vašu poruku (najmanje 10 karaktera).</div>
+              <div class="field-error" id="err-message" data-i18n="err_general">Podatak nije ispravno unet.</div>
+            </div>
+<a href="../success/index.html" style="text-decoration: none; display: inline-block;">
+  <button type="button" class="btn-submit" id="submitBtn">
+    <span data-i18n="btn_send">Pošalji poruku</span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <line x1="22" y1="2" x2="11" y2="13"/>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+    </svg>
+  </button>
+</a>
+<br>
+          </div> </div></div> </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+    <img src="../imglogo/pawtnerslogo.png" alt="Pawtners" class="footer-logo" />
+          <p class="footer-desc" data-i18n="footer_desc">Azil za pse u Novom Pazaru. Spašavamo, negujemo i udomljavamo pse od 2016. godine.</p>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 class="footer-heading" data-i18n="footer_nav">Navigacija</h5>
+          <ul class="footer-links">
+            <li><a href="../home/index.html" data-i18n="nav_home">Početna</a></li>
+            <li><a href="../about/about.html" data-i18n="nav_about">O nama</a></li>
+            <li><a href="../adopt/adopt.html" data-i18n="nav_adopt">Udomljavanje</a></li>
+            <li><a href="../contact/contact.html" data-i18n="nav_contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 class="footer-heading" data-i18n="footer_contact_h">Kontakt</h5>
+          <p class="footer-contact-item">Ul. Stefana Nemanje 14, Novi Pazar</p>
+          <p class="footer-contact-item">+381 20 123 456</p>
+          <p class="footer-contact-item">info@pawtners.rs</p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 class="footer-heading" data-i18n="footer_hours">Radno vreme</h5>
+          <p class="footer-contact-item" data-i18n="hours1">Pon - Pet: 08:00 - 18:00</p>
+          <p class="footer-contact-item" data-i18n="hours2">Sub: 09:00 - 15:00</p>
+          <p class="footer-contact-item" data-i18n="hours3">Ned: Zatvoreno</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">2026 Pawtners. Sva prava zadržana.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
